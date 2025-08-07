@@ -1,0 +1,6 @@
+import pandas as pd
+
+pd.set_option("display.max_columns", None)
+pd.set_option("display.float_format", lambda x: "%.2f" % x)
+df = pd.read_excel('miuul_gezinomi.xlsx')
+print(df.head())
